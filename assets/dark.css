@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+body{
+  background-color: #15202b;
+  color: #ffffff;
+  font-family: 'Acme', sans-serif;
+}
+#header{
+    background-color: #192734;
+    display: block;
+    vertical-align: top;
+}
+#title{
+  text-align: left;
+  width:92%;
+  display: inline-block;
+}
+#author{
+  float: right;
+  width:8%;
+  display: inline-block;
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #15202b;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    z-index: 999;
+}
+
+#sidebar .sidebar-header {
+    padding: 15px;
+    background: #192734;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
