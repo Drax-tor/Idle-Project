@@ -8166,7 +8166,7 @@ h1, h2, h3, h4, h5,
   line-height: 1.5;
   font-weight: 400;
   font-family: "Poppins", Arial, sans-serif;
-  color: #000; }
+  color: grey; }
 
 .img {
   background-size: cover;
@@ -8330,7 +8330,8 @@ a[data-toggle="collapse"] {
   min-height: 100vh;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  background: #23272b; }
 
 .btn.btn-primary {
   background: #2f89fc;
@@ -8368,3 +8369,11 @@ a[data-toggle="collapse"] {
 
 .subscribe-form .form-control {
   background: #4897fc; }
+
+/*************** CUSTOM ************/
+.hide {
+  display:none;
+}
+#heroHeader {
+  border: solid gray;
+}
