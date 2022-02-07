@@ -29,6 +29,9 @@
             <a id="homeBtn" href="#home"><span class="fa fa-home mr-3"></span> Home</a>
           </li>
           <li>
+            <a id="heroBtn" href="#hero"><span class="fa fa-user mr-3"></span> Hero  <span id="badgeLevelPointsHero" class="badge badge-danger hide">0</span></a>
+          </li>
+          <li>
             <a id="settingsBtn" href="#settings"><span class="fa fa-cog mr-3"></span> Settings</a>
           </li>
           <li>
@@ -38,8 +41,9 @@
 
     	</nav>
 
-        <!-- Page Content  -->
+      <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-4">
+        <!-- Hero Header  -->
         <div id="heroHeader" class="row mb-4 ml-0 mr-0 pb-3 pt-1">
           <div class="col-2">
             <p class="mb-0">Level:</p>
@@ -57,27 +61,63 @@
             </div>
           </div>
         </div>
+        <!-- Home  -->
         <div class="home">
           <h2 class="mb-4">Project Idle Home</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+        <!-- Hero Page  -->
+        <div class="hero hide">
+          <h2 class="mb-4">Hero</h2>
+          <div id="heroEquipStats" class="row mb-4 ml-0 mr-0 pb-3 pt-1">
+            <button onclick="levelUp()">Level Up!</button>
+            <div class="col heroBox">
+              <p>Equp</p>
+            </div>
+            <div class="col heroBox">
+              <p id="lblStats"><h2>Stats  <span id="lblPointToSPend" class="badge badge-success hide">0 points to spend</span></h2></p>
+              <div class="row">
+                <div class=" col">
+                  <p id="lblLevel">Level:</p>
+                  <p id="lblExp">Experience:</p>
+                  <p id="lblGold">Gold:</p>
+                  <p id="lblHunterP">Hunter Points:</p>
+                </div>
+                <div class="col">
+                  <p id="lblStr">Strength:</p>
+                  <p id="lblCons">Constitution:</p>
+                  <p id="lblDex">Dexterity:</p>
+                  <p id="lblHp">HP:</p>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div id="heroInventory" class="row mb-4 ml-0 mr-0 pb-3 pt-1 pl-3 heroBox">
+            <p>Inventory</p>
+
+          </div>
+        </div>
+        <!-- Settings Page -->
         <div class="settings hide">
           <h2 class="mb-4">Settings</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Options</p>
         </div>
+        <!-- Support Page  -->
         <div class="support hide">
           <h2 class="mb-4">About</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Game by <a href="https://github.com/Drax-tor">Draxtor</a></p>
         </div>
-      </div>
 		</div>
 
     <script src="assets\lib\bootstrap.bundle.min.js" charset="utf-8"></script>
     <script src="assets\lib\jquery-3.6.0.min.js" charset="utf-8"></script>
     <script src="assets\lib\sidebar.js"></script>
     <script src="assets\scripts\main.js"></script>
+    <script src="assets\scripts\hero.js"></script>
   </body>
 </html>

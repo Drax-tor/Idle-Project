@@ -8377,3 +8377,13 @@ a[data-toggle="collapse"] {
 #heroHeader {
   border: solid gray;
 }
+.heroBox{
+  border: solid gray;
+}
+.clickableAwesomeFont {
+  margin-left: 2px;
+  cursor: pointer;
+}
+.clickableAwesomeFont:hover {
+  border: 1px solid gray;
+}
