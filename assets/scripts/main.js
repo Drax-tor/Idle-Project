@@ -7,6 +7,7 @@ $('#settingsBtn').click(function(){
   $('.support').addClass('hide');
   $('.settings').removeClass('hide');
   $('.hero').addClass('hide');
+  $('.dungeon').addClass('hide');
 });
 
 $('#homeBtn').click(function(){
@@ -14,6 +15,7 @@ $('#homeBtn').click(function(){
   $('.support').addClass('hide');
   $('.home').removeClass('hide');
   $('.hero').addClass('hide');
+  $('.dungeon').addClass('hide');
 });
 
 $('#supportBtn').click(function(){
@@ -21,13 +23,23 @@ $('#supportBtn').click(function(){
   $('.home').addClass('hide');
   $('.support').removeClass('hide');
   $('.hero').addClass('hide');
+  $('.dungeon').addClass('hide');
 });
 
 $('#heroBtn').click(function(){
 	$('.settings').addClass('hide');
   $('.home').addClass('hide');
   $('.support').addClass('hide');
+  $('.dungeon').addClass('hide');
   $('.hero').removeClass('hide');
+});
+
+$('#dungeonBtn').click(function(){
+  $('.dungeon').removeClass('hide');
+	$('.settings').addClass('hide');
+  $('.home').addClass('hide');
+  $('.support').addClass('hide');
+  $('.hero').addClass('hide');
 });
 
 $(document).on('click','#addStr',function(){
