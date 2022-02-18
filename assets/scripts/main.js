@@ -1,6 +1,7 @@
 $(function(){
 
   heroInit();
+  dungeonInit();
 
 $('#settingsBtn').click(function(){
 	$('.home').addClass('hide');
@@ -61,3 +62,25 @@ $(document).on('click','#addDex',function(){
 });
 
 })
+
+function updateLabelStats(){
+  $('#lblTowerLevel').text(dungeonlevel);
+  $('#badgeLevelPointsHero').text(levelPoints);
+  $('#lblPointToSPend').text(levelPoints + ' points to spend')
+  $('#lblLevel').text('Level: ' + level);
+  $('#lblExp').text('Experience: ' + exp);
+  $('#lblGold').text('Gold: ' + gold);
+  $('#lblHunterP').text('Hunter Points: ' + hunterPoint);
+  if(levelPoints > 0){
+    $('#lblStr').text('Strength: ' + strength).append(appendAddStr);
+    $('#lblCons').text('Constitution: ' + constitution).append(appendAddCons);
+    $('#lblDex').text('Dexterity: ' + dexterity).append(appendAddDex);
+  }else{
+    $('#badgeLevelPointsHero').addClass('hide');
+    $('#lblPointToSPend').addClass('hide');
+    $('#lblStr').text('Strength: ' + strength);
+    $('#lblCons').text('Constitution: ' + constitution);
+    $('#lblDex').text('Dexterity: ' + dexterity);
+  }
+  $('#lblHp').text('HP: ' + hp);
+}
