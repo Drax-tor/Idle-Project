@@ -9,6 +9,7 @@
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/dungeonStyle.css">
     <link rel="stylesheet" href="assets/lib/rpg-awesome.min.css">
   </head>
   <body>
@@ -104,8 +105,25 @@
         </div>
         <!-- Dungeon Page -->
         <div class="dungeon hide">
-          <h2 class="mb-4">The Dungeon</h2>
-          <p>Loose all your hopes and dreams!</p>
+          <div class="row">
+            <h2 class="mb-4">The Dungeon</h2>
+
+          </div>
+          <div class="row">
+            <h3 id="floorLevelInfo"></h3>
+            <div class="col colDown">
+              <img id="floorDown" class="arrowDown" width="1" height="1">
+              <p id="lblFloorDown">Next Floor</p>
+            </div>
+            <div class="col colUp">
+              <img id="floorUp" class="arrowUp hide" width="1" height="1">
+              <p id="lblFloorUp" class="hide">Previous Floor</p>
+            </div>
+
+
+          </div>
+          <p id="dungeonDesc">Loose all your hopes and dreams!</p>
+
         </div>
         <!-- Settings Page -->
         <div class="settings hide">
@@ -125,5 +143,6 @@
     <script src="assets\scripts\main.js"></script>
     <script src="assets\scripts\hero.js"></script>
     <script src="assets\scripts\dungeon.js"></script>
+    <script type="text/javascript" src="assets\json\dungeon.json"></script>
   </body>
 </html>

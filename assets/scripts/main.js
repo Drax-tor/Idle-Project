@@ -65,6 +65,15 @@ $(document).on('click','#addDex',function(){
 
 function updateLabelStats(){
   $('#lblTowerLevel').text(dungeonlevel);
+  $('#floorLevelInfo').text('Dungeon level: ' + dungeonlevel);
+  if(dungeonlevel > 0){
+    $('#floorUp').removeClass('hide');
+    $('#lblFloorUp').removeClass('hide');
+  }
+  else{
+    $('#floorUp').addClass('hide');
+    $('#lblFloorUp').addClass('hide');
+  }
   $('#badgeLevelPointsHero').text(levelPoints);
   $('#lblPointToSPend').text(levelPoints + ' points to spend')
   $('#lblLevel').text('Level: ' + level);

@@ -8369,21 +8369,3 @@ a[data-toggle="collapse"] {
 
 .subscribe-form .form-control {
   background: #4897fc; }
-
-/*************** CUSTOM ************/
-.hide {
-  display:none;
-}
-#heroHeader {
-  border: solid gray;
-}
-.heroBox{
-  border: solid gray;
-}
-.clickableAwesomeFont {
-  margin-left: 2px;
-  cursor: pointer;
-}
-.clickableAwesomeFont:hover {
-  border: 1px solid gray;
-}
